@@ -1,4 +1,4 @@
-# Flask Container Lab 🐳
+# Flask Container Lab 
 
 ## Overview 📝
 
@@ -8,12 +8,12 @@ This project demonstrates deploying a multi-container Flask application environm
 
 ## Features ✨
 
-- 🐍 Python Flask web application
-- 📦 Podman containerized deployment
-- 🌐 nginx reverse proxy integration
-- 🔗 Internal container networking
-- ⚙️ Podman Compose orchestration
-- 🖥️ Fedora Linux host environment
+- Python Flask web application
+- Podman containerized deployment
+- nginx reverse proxy integration
+- Internal container networking
+- Podman Compose orchestration
+- Fedora Linux host environment
 
 ---
 
@@ -27,6 +27,8 @@ nginx Reverse Proxy
 Flask Application Container
 
 ## Project Structure 📂
+```text
+
 flask-demo/
 ├── app/
 │   ├── app.py
