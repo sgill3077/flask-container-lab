@@ -26,7 +26,7 @@ nginx Reverse Proxy
       ↓
 Flask Application Container
 
-#Project Structure 📂
+## Project Structure 📂
 flask-demo/
 ├── app/
 │   ├── app.py
@@ -38,11 +38,11 @@ flask-demo/
 ├── README.md
 └── screenshots/
 
-#Project Status ⚡
+## Project Status ⚡
 
 Active Development — core multi-container architecture completed and expanding with monitoring, logging, and deployment enhancements.
 
-#Tech Stack 🛠️
+## #Tech Stack 🛠️
 Python 3
 Flask
 Podman
@@ -50,7 +50,7 @@ Podman Compose
 nginx
 Fedora Linux
 
-#Instructions 🚀
+## Instructions 🚀
 1. Build and Start Containers
 podman compose up --build
 
@@ -60,7 +60,7 @@ http://127.0.0.1:8080
 3. Stop Containers
 podman compose down
 
-#Current Functionality ✅
+## Current Functionality ✅
 
 Multi-container deployment
 Reverse proxy communication
@@ -69,7 +69,7 @@ Containerized Flask application
 Declarative orchestration with Compose
 Local web application hosting
 
-#Future Work 🔧
+## Future Work 🔧
 
 Add persistent logging volumes
 Implement container health checks
@@ -78,5 +78,5 @@ Add monitoring with Prometheus/Grafana
 Expand Flask application functionality
 Implement CI/CD workflows
 
-#GitHub Repository 🔗
+## GitHub Repository 🔗
 GitHub: https://github.com/sgill3077/flask-container-lab
