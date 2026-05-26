@@ -1,60 +1,82 @@
 # Flask Container Lab 🐳
 
 ## Overview 📝
-This project demonstrates containerizing a Python Flask application using Podman on Fedora Linux. It focuses on reproducible container builds, container networking, and exposing a web service on a local network.
+
+This project demonstrates deploying a multi-container Flask application environment using Podman and nginx on Fedora Linux. The lab focuses on container orchestration, reverse proxy configuration, internal container networking, and reproducible application deployment workflows.
 
 ---
 
 ## Features ✨
+
 - 🐍 Python Flask web application
-- 📦 Podman Containerfile for building images
-- 🌐 Local network access testing
+- 📦 Podman containerized deployment
+- 🌐 nginx reverse proxy integration
 - 🔗 Internal container networking
+- ⚙️ Podman Compose orchestration
+- 🖥️ Fedora Linux host environment
 
 ---
 
-## Project Status ⚡
-In Progress — expanding into multi-container architecture with nginx reverse proxy.
+## Architecture 🏗️
 
----
+```text
+Client Browser
+      ↓
+nginx Reverse Proxy
+      ↓
+Flask Application Container
 
-## Tech Stack 🛠️
-- Python
-- Flask
-- Podman
-- Fedora Linux
+#Project Structure 📂
+flask-demo/
+├── app/
+│   ├── app.py
+│   └── requirements.txt
+├── nginx/
+│   └── default.conf
+├── compose.yaml
+├── Containerfile
+├── README.md
+└── screenshots/
 
----
+#Project Status ⚡
 
-## Instructions 🚀
+Active Development — core multi-container architecture completed and expanding with monitoring, logging, and deployment enhancements.
 
-1. **Build the container image:**
-\`\`\`bash
-podman build -t flask-demo .
-\`\`\`
+#Tech Stack 🛠️
+Python 3
+Flask
+Podman
+Podman Compose
+nginx
+Fedora Linux
 
-2. **Run the container:**
-\`\`\`bash
-podman run -d -p 5000:5000 flask-demo
-\`\`\`
+#Instructions 🚀
+1. Build and Start Containers
+podman compose up --build
 
-3. **Open in browser:**
-\`\`\`text
-http://127.0.0.1:5000
-\`\`\`
+2. Open in Browser
+http://127.0.0.1:8080
 
----
+3. Stop Containers
+podman compose down
 
-## Future Work 🔧
-- Integrate with nginx reverse proxy using Podman Compose
-- Add automated CI/CD deployment
-- Include SSL/TLS with Let's Encrypt
-- Expand API endpoints
+#Current Functionality ✅
 
----
+Multi-container deployment
+Reverse proxy communication
+Internal container networking
+Containerized Flask application
+Declarative orchestration with Compose
+Local web application hosting
 
-## GitHub Links 🔗
-[Project Repository](https://github.com/sgill3077/flask-container-lab)
+#Future Work 🔧
 
----
+Add persistent logging volumes
+Implement container health checks
+Integrate SSL/TLS support
+Add monitoring with Prometheus/Grafana
+Expand Flask application functionality
+Implement CI/CD workflows
 
+#GitHub Repository 🔗
+GitHub: https://github.com/sgill3077/flask-container-lab
