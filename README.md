@@ -56,9 +56,11 @@ flask-demo/
 │   └── requirements.txt
 ├── nginx/
 │   └── default.conf
-├── compose.yaml
+├── .gitignore
 ├── Containerfile
+├── compose.yaml
 └── README.md
+
 ```
 ---
 
