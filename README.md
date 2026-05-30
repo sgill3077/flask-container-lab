@@ -39,13 +39,27 @@ Flask Application Container
 ```
 ---
 
-## 🚀 How to Run
+## 🚀 How to 
 
 ### 1. Clone the repository
+
 ```bash
-[git clone https://github.com/your-username/flask-container-lab.git](https://github.com/sgill3077/flask-container-lab)
+git clone https://github.com/sgill3077/flask-container-lab.git
 cd flask-container-lab
----
+
+### What was wrong in yours:
+- ❌ You used a Markdown link inside a bash code block (that won’t render correctly)
+- ❌ You mixed `[text](url)` syntax with a terminal command
+- ❌ The code block wasn’t properly closed with ```
+
+If you want it to look *extra clean for recruiters*, you can also do this:
+
+```markdown
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sgill3077/flask-container-lab.git
+cd flask-container-lab
 
 ## Project Structure 📂
 
