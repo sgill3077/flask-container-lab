@@ -47,7 +47,7 @@ Flask Application Container
 git clone https://github.com/sgill3077/flask-container-lab.git
 cd flask-container-lab
 
-## Project Structure 📂
+## 📂 Project Structure 
 
 ```text
 flask-demo/
@@ -88,7 +88,7 @@ Planned improvements:
 
 ---
 
-## Instructions 🚀
+## 🚀 Instructions 
 
 ### Build and Start Containers
 
@@ -121,7 +121,7 @@ podman compose down
 
 ---
 
-## Future Work 🔧
+## 🔧 Future Work 
 
 - Add persistent logging volumes
 - Implement container health checks
