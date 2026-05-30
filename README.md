@@ -5,35 +5,31 @@
 ![Podman](https://img.shields.io/badge/Podman-Containers-892CA0?style=for-the-badge&logo=podman&logoColor=white)
 ![nginx](https://img.shields.io/badge/nginx-Reverse_Proxy-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Fedora](https://img.shields.io/badge/Fedora-Linux-294172?style=for-the-badge&logo=fedora&logoColor=white)
-![Container Networking](https://img.shields.io/badge/Container-Networking-success?style=for-the-badge)
-![Infrastructure Lab](https://img.shields.io/badge/Infrastructure-Lab-orange?style=for-the-badge)
 ![DevOps](https://img.shields.io/badge/DevOps-Learning_Project-2496ED?style=for-the-badge)
-
-## Overview 📝
-
-This project demonstrates deploying a multi-container Flask application environment using Podman and nginx on Fedora Linux.
-
-The lab focuses on:
-- container orchestration
-- reverse proxy configuration
-- internal container networking
-- reproducible deployment workflows
+![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
 ---
 
-## Features ✨
+## 📌 Overview
 
-- 🐍 Python Flask web application
-- 📦 Podman containerized deployment
+This project demonstrates the deployment of a **multi-container Flask application** using **Podman** and **nginx** on a Fedora Linux environment.
+
+It focuses on containerized architecture, reverse proxy configuration, and internal container networking.
+
+---
+
+## ✨ Key Features
+
+- 🐍 Flask backend application
+- 📦 Containerized using Podman
 - 🌐 nginx reverse proxy integration
 - 🔗 Internal container networking
 - ⚙️ Podman Compose orchestration
-- 🖥️ Fedora Linux host environment
+- 🖥️ Fedora Linux environment
 
 ---
 
-## Architecture 🏗️
-
+## 🏗️ Architecture
 ```text
 Client Browser
       ↓
@@ -41,7 +37,14 @@ nginx Reverse Proxy
       ↓
 Flask Application Container
 ```
+---
 
+## 🚀 How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/flask-container-lab.git
+cd flask-container-lab
 ---
 
 ## Project Structure 📂
@@ -61,20 +64,27 @@ flask-demo/
 
 ---
 
-## Project Status ⚡
+⚡ Project Status
 
-Active Development — core multi-container architecture completed and expanding with monitoring, logging, and deployment enhancements.
+Active Development
 
+Planned improvements:
+
+* Monitoring (Prometheus/Grafana integration)
+* Centralized logging
+* CI/CD pipeline automation
+* Deployment hardening
 ---
 
 ## Tech Stack 🛠️
 
-- Python 3
-- Flask
-- Podman
-- Podman Compose
-- nginx
-- Fedora Linux
+* Python 3
+* Flask
+* Podman
+* Podman Compose
+* nginx
+* Fedora Linux
+* GitHub Actions
 
 ---
 
@@ -121,7 +131,11 @@ podman compose down
 - Implement CI/CD workflows
 
 ---
+📘 Purpose
 
+This project was built for learning and portfolio demonstration, focusing on container orchestration and reverse proxy workflows in a Linux-based environment.
+
+---
 ## GitHub Repository 🔗
 
 Repository:
