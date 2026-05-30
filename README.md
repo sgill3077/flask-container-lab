@@ -58,8 +58,8 @@ flask-demo/
 │   └── default.conf
 ├── .gitignore
 ├── Containerfile
-├── compose.yaml
-└── README.md
+├── README.md
+└── compose.yaml
 
 ```
 ---
