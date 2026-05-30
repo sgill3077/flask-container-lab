@@ -1,4 +1,13 @@
-# Flask Container Lab 🐳
+# 🐳 Flask Container Lab
+
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-Web_App-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Podman](https://img.shields.io/badge/Podman-Containers-892CA0?style=for-the-badge&logo=podman&logoColor=white)
+![nginx](https://img.shields.io/badge/nginx-Reverse_Proxy-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Fedora](https://img.shields.io/badge/Fedora-Linux-294172?style=for-the-badge&logo=fedora&logoColor=white)
+![Container Networking](https://img.shields.io/badge/Container-Networking-success?style=for-the-badge)
+![Infrastructure Lab](https://img.shields.io/badge/Infrastructure-Lab-orange?style=for-the-badge)
+![DevOps](https://img.shields.io/badge/DevOps-Learning_Project-2496ED?style=for-the-badge)
 
 ## Overview 📝
 
