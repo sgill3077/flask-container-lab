@@ -131,7 +131,7 @@ podman compose down
 - Implement CI/CD workflows
 
 ---
-📘 Purpose
+## 📘 Purpose
 
 This project was built for learning and portfolio demonstration, focusing on container orchestration and reverse proxy workflows in a Linux-based environment.
 
