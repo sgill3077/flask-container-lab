@@ -58,8 +58,7 @@ flask-demo/
 │   └── default.conf
 ├── compose.yaml
 ├── Containerfile
-├── README.md
-└── screenshots/
+└── README.md
 ```
 ---
 
