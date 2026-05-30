@@ -46,7 +46,7 @@ Flask Application Container
 ```bash
 git clone https://github.com/sgill3077/flask-container-lab.git
 cd flask-container-lab
-
+```
 ## 📂 Project Structure 
 
 ```text
@@ -61,7 +61,6 @@ flask-demo/
 ├── README.md
 └── screenshots/
 ```
-
 ---
 
 ## ⚡ Project Status
