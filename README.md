@@ -43,7 +43,7 @@ Flask Application Container
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/flask-container-lab.git
+[git clone https://github.com/your-username/flask-container-lab.git](https://github.com/sgill3077/flask-container-lab)
 cd flask-container-lab
 ---
 
@@ -64,7 +64,7 @@ flask-demo/
 
 ---
 
-⚡ Project Status
+## ⚡ Project Status
 
 Active Development
 
@@ -76,7 +76,7 @@ Planned improvements:
 * Deployment hardening
 ---
 
-## Tech Stack 🛠️
+## 🛠️ Tech Stack 
 
 * Python 3
 * Flask
