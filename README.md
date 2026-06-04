@@ -5,6 +5,8 @@
 ![Podman](https://img.shields.io/badge/Podman-Containers-892CA0?style=for-the-badge&logo=podman&logoColor=white)
 ![nginx](https://img.shields.io/badge/nginx-Reverse_Proxy-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Fedora](https://img.shields.io/badge/Fedora-Linux-294172?style=for-the-badge&logo=fedora&logoColor=white)
+![DevOps](https://img.shields.io/badge/DevOps-Learning_Project-2496ED?style=for-the-badge)
+![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
 ---
 
@@ -52,69 +54,12 @@ cd flask-container-lab
 ## 📂 Project Structure 
 
 ```text
-=======
-This project demonstrates the deployment of a multi-container Flask application using Podman and nginx on Fedora Linux.
-
-The lab focuses on:
-
-- Containerized application deployment
-- Reverse proxy configuration
-- Internal container networking
-- Podman Compose orchestration
-
----
-
-## ✨ Current Functionality
-
-- Multi-container deployment
-- Reverse proxy communication
-- Internal container networking
-- Containerized Flask application
-- Declarative orchestration with Compose
-- Local web application hosting
-
----
-
-## 🏗️ Architecture
-
-```text
-Browser
-   │
-localhost:8080
-   │
-   ▼
-nginx Container
-   │
-   ▼
-Flask Container
-```
-
----
-
-## 📸 Deployment Verification
-
-### Running Containers
-
-![Running Containers](screenshots/podman-ps.png)
-
-### Application Response
-
-![Application Response](screenshots/application-page.png)
-
-
----
-
-## 📂 Project Structure
-
-```text
->>>>>>> f31fad5 (Add deployment screenshots and update documentation)
 flask-demo/
 ├── app/
 │   ├── app.py
 │   └── requirements.txt
 ├── nginx/
 │   └── default.conf
-<<<<<<< HEAD
 ├── .gitignore
 ├── Containerfile
 ├── README.md
@@ -148,24 +93,6 @@ Planned improvements:
 ---
 
 ## 🚀 Instructions 
-=======
-├── screenshots/
-├── Containerfile
-├── compose.yaml
-└── README.md
-```
-
----
-
-## 🚀 Getting Started
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/sgill3077/flask-container-lab.git
-cd flask-container-lab
-```
->>>>>>> f31fad5 (Add deployment screenshots and update documentation)
 
 ### Build and Start Containers
 
@@ -199,32 +126,11 @@ podman compose down
 ---
 
 ## 🔧 Future Work 
-=======
-## 🛠️ Tech Stack
-
-- Python 3
-- Flask
-- Podman
-- Podman Compose
-- nginx
-- Fedora Linux
-
----
-
-## 📘 Purpose
-
-This project was built for learning and portfolio demonstration, focusing on containerization, reverse proxy workflows, and container networking in a Linux environment.
-
----
-
-## 🔧 Future Work
->>>>>>> f31fad5 (Add deployment screenshots and update documentation)
 
 - Add persistent logging volumes
 - Implement container health checks
 - Integrate SSL/TLS support
 - Add monitoring with Prometheus/Grafana
-<<<<<<< HEAD
 - Expand Flask application functionality
 - Implement CI/CD workflows
 
@@ -237,14 +143,4 @@ This project was built for learning and portfolio demonstration, focusing on con
 ## GitHub Repository 🔗
 
 Repository:
-=======
-- Implement CI/CD workflows
-
----
-
-## GitHub Repository 🔗
-
-Repository:
-
->>>>>>> f31fad5 (Add deployment screenshots and update documentation)
 https://github.com/sgill3077/flask-container-lab
