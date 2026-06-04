@@ -31,11 +31,15 @@ It focuses on containerized architecture, reverse proxy configuration, and inter
 
 ## 🏗️ Architecture
 ```text
-Client Browser
-      ↓
-nginx Reverse Proxy
-      ↓
-Flask Application Container
+Browser
+   │
+localhost:8080
+   │
+   ▼
+nginx Container
+   │
+   ▼
+Flask Container
 ```
 ---
 
