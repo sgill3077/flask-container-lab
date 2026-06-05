@@ -56,7 +56,6 @@ The lab focuses on:
 ```text
 # 🏗️ Architecture
 
-```text id="0az03l"
 Client Browser
       │
       ▼
