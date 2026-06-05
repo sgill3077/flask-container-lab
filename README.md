@@ -5,7 +5,7 @@
 ![Podman](https://img.shields.io/badge/Podman-Containers-892CA0?style=for-the-badge&logo=podman&logoColor=white)
 ![nginx](https://img.shields.io/badge/nginx-Reverse_Proxy-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Fedora](https://img.shields.io/badge/Fedora-Linux-294172?style=for-the-badge&logo=fedora&logoColor=white)
-
+![CI](https://github.com/sgill3077/flask-container-lab/actions/workflows/python-ci.yml/badge.svg)
 ---
 
 ## 📌 Overview
