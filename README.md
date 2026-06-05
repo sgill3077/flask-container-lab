@@ -10,19 +10,18 @@
 ---
 
 # 📌 Overview
+This project demonstrates the deployment of a multi-container Flask application using Podman and nginx on Fedora Linux.
 
-This project is a containerized Flask web application platform deployed with Podman Compose and nginx on Fedora Linux.
+The environment now includes Prometheus-compatible application metrics, enabling observability and future monitoring integration with Prometheus and Grafana.
 
-The environment simulates a production-style multi-container deployment workflow, including:
+The lab focuses on:
 
-* Reverse proxy routing with nginx
-* Internal container networking
-* Multi-container orchestration with Podman Compose
-* Isolated application services
-* Linux-based deployment workflows
-* Continuous Integration with GitHub Actions
-
-This project was built to strengthen practical DevOps and infrastructure engineering skills around containerization, service communication, and application deployment.
+- Containerized application deployment
+- Reverse proxy configuration
+- Internal container networking
+- Application instrumentation
+- Metrics exposure for observability
+- Podman Compose orchestration
 
 ---
 
@@ -32,9 +31,10 @@ This project was built to strengthen practical DevOps and infrastructure enginee
 * Reverse proxy communication
 * Internal container networking
 * Containerized Flask application
+* Prometheus-compatible metrics exposure
+* HTTP request monitoring
 * Declarative orchestration with Compose
 * Local web application hosting
-* Automated CI workflow validation
 
 ---
 
@@ -54,6 +54,9 @@ This project was built to strengthen practical DevOps and infrastructure enginee
 # 🏗️ Architecture
 
 ```text
+# 🏗️ Architecture
+
+```text id="0az03l"
 Client Browser
       │
       ▼
@@ -62,6 +65,13 @@ nginx Reverse Proxy Container
       ▼
 Flask Application Container
       │
+      ├── Application Responses
+      │
+      └── /metrics Endpoint
+               │
+               ▼
+     Prometheus-Compatible Metrics
+
 Internal Podman Network
 ```
 
@@ -69,9 +79,9 @@ Internal Podman Network
 
 1. Client requests arrive through nginx on port 8080
 2. nginx forwards requests to the Flask application container
-3. Flask processes the request and returns the response
-4. Containers communicate through an isolated internal Podman network
-
+3. Flask processes application requests and returns responses
+4. Flask exposes Prometheus-compatible metrics through `/metrics`
+5. Containers communicate through an isolated internal Podman network
 ---
 
 # ⚙️ Continuous Integration
@@ -177,17 +187,28 @@ The project also improved my understanding of service communication and infrastr
 
 ---
 
-# 📈 Planned Monitoring Integration
+# 📈 Prometheus Metrics Integration
 
-Future iterations of this project will integrate:
+The Flask application now exposes Prometheus-compatible metrics through:
 
-* Prometheus metrics collection
-* Grafana dashboards
-* Container health monitoring
-* Request/response metrics
-* System observability workflows
+```text
+/metrics
+```
 
-This expansion will transform the project into a fully monitored container platform.
+Example endpoint:
+
+```text
+http://127.0.0.1:8080/metrics
+```
+
+Current metrics include:
+
+* HTTP request counters
+* Python runtime metrics
+* Process-level metrics
+
+This instrumentation enables future integration with Prometheus and Grafana for observability and monitoring workflows.
+
 
 ---
 
@@ -196,7 +217,7 @@ This expansion will transform the project into a fully monitored container platf
 * Add persistent logging volumes
 * Implement container health checks
 * Integrate SSL/TLS support
-* Add Prometheus and Grafana monitoring
+* Integrate Prometheus scraping and Grafana dashboards
 * Expand CI/CD automation workflows
 * Deploy to a cloud-hosted Linux VM
 
