@@ -53,9 +53,6 @@ The lab focuses on:
 
 # 🏗️ Architecture
 
-```text
-# 🏗️ Architecture
-
 Client Browser
       │
       ▼
