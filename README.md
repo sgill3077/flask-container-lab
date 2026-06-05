@@ -14,37 +14,29 @@
 # 📌 Overview
 This project demonstrates the deployment of a multi-container Flask application using Podman and nginx on Fedora Linux.
 
-<<<<<<< HEAD
 The environment now includes Prometheus-compatible application metrics, enabling observability and future monitoring integration with Prometheus and Grafana.
 
 The lab focuses on:
-
-=======
 This project demonstrates the deployment of a containerized Flask application using Podman and nginx on Fedora Linux.
 
 The application has been instrumented with Prometheus metrics and integrated with Prometheus and Grafana to provide end-to-end observability.
 
 The lab focuses on:
 
->>>>>>> bb1a56b (Update README with Prometheus and Grafana observability)
 - Containerized application deployment
 - Reverse proxy configuration
 - Internal container networking
 - Application instrumentation
-<<<<<<< HEAD
 - Metrics exposure for observability
 - Podman Compose orchestration
-=======
 - Metrics collection and monitoring
 - Observability workflows
 - CI automation with GitHub Actions
->>>>>>> bb1a56b (Update README with Prometheus and Grafana observability)
 
 ---
 
 # ✨ Current Functionality
 
-<<<<<<< HEAD
 * Multi-container deployment
 * Reverse proxy communication
 * Internal container networking
@@ -53,7 +45,6 @@ The lab focuses on:
 * HTTP request monitoring
 * Declarative orchestration with Compose
 * Local web application hosting
-=======
 - Multi-container deployment
 - Reverse proxy communication
 - Internal container networking
@@ -64,7 +55,6 @@ The lab focuses on:
 - HTTP request monitoring
 - Declarative orchestration with Compose
 - Local web application hosting
->>>>>>> bb1a56b (Update README with Prometheus and Grafana observability)
 
 ---
 
@@ -99,14 +89,11 @@ Flask Application Container
       └── /metrics Endpoint
                │
                ▼
-<<<<<<< HEAD
      Prometheus-Compatible Metrics
-=======
           Prometheus
                │
                ▼
             Grafana
->>>>>>> bb1a56b (Update README with Prometheus and Grafana observability)
 
 Internal Podman Network
 ```
@@ -115,18 +102,15 @@ Internal Podman Network
 
 1. Client requests arrive through nginx on port 8080
 2. nginx forwards requests to the Flask application container
-<<<<<<< HEAD
 3. Flask processes application requests and returns responses
 4. Flask exposes Prometheus-compatible metrics through `/metrics`
 5. Containers communicate through an isolated internal Podman network
-=======
 3. Flask processes requests and returns responses
 4. Flask exposes Prometheus metrics through `/metrics`
 5. Prometheus scrapes and stores metrics
 6. Grafana visualizes metrics through dashboards
 7. Containers communicate through an isolated Podman network
 
->>>>>>> bb1a56b (Update README with Prometheus and Grafana observability)
 ---
 
 # ⚙️ Continuous Integration
@@ -277,7 +261,6 @@ Through this project I gained practical experience with:
 - Creating CI workflows with GitHub Actions
 - Building reproducible deployment environments
 
-<<<<<<< HEAD
 The project also improved my understanding of service communication and infrastructure troubleshooting in containerized environments.
 
 ---
@@ -303,23 +286,18 @@ Current metrics include:
 * Process-level metrics
 
 This instrumentation enables future integration with Prometheus and Grafana for observability and monitoring workflows.
-
-=======
 The project significantly improved my understanding of containerized applications, monitoring, and observability practices.
->>>>>>> bb1a56b (Update README with Prometheus and Grafana observability)
 
 ---
 
 # 🔧 Future Improvements
 
-<<<<<<< HEAD
 * Add persistent logging volumes
 * Implement container health checks
 * Integrate SSL/TLS support
 * Integrate Prometheus scraping and Grafana dashboards
 * Expand CI/CD automation workflows
 * Deploy to a cloud-hosted Linux VM
-=======
 - Add persistent logging volumes
 - Implement container health checks
 - Add SSL/TLS support
@@ -327,7 +305,6 @@ The project significantly improved my understanding of containerized application
 - Add automated testing
 - Deploy to a cloud-hosted Linux VM
 - Implement alerting with Alertmanager
->>>>>>> bb1a56b (Update README with Prometheus and Grafana observability)
 
 ---
 
