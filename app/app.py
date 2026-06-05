@@ -1,10 +1,24 @@
-from flask import Flask
+
+from flask import Flask, Response
+from prometheus_client import Counter, generate_latest
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return "<h1>Quantum Node Container Lab 🚀</h1>"
+# Prometheus metric
+REQUEST_COUNT = Counter(
+    'flask_app_requests_total',
+    'Total number of requests to the Flask application'
+)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+@app.route('/')
+def home():
+    REQUEST_COUNT.inc()
+    return "Flask monitoring lab is running!"
+
+@app.route('/metrics')
+def metrics():
+    return Response(generate_latest(), mimetype='text/plain')
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
